@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কিশোরগঞ্জ ফার্মেসি</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">কিশোরগঞ্জ <span>ফার্মেসি</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">হোম</a></li>
+                    <li><a href="#">প্রদত্ত সেবা সমূহ</a></li>
+                    <li><a href="#">আমাদের সম্পর্কে</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">যোগাযোগ করুণ</a></li>
+                    <li class="go-premium-cta"><a href="checkup.html">ডাক্তার দেখান</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">আমরা আছি আপনার পাশে</p>
+                <h1>কিশোরগঞ্জ ফার্মেসি, একটি নির্ভরযোগ্য ফার্মেসি</h1>
+
+                <div class="hero-cta">
+                    <a href="order.html" class="primary-cta">ঔষধ অর্ডার</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video"> ভিডিও দেখুন
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/yy.png" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>সবচেয়ে দ্রুত ডেলিভারি</li>
+                <li>সকল স্বাস্থ্য ব্যাবস্থা মেনে ডিলিভারি</li>
+                <li>ডক্তার দেখানোর ব্যাবস্থা</li>
+                <li>বিশেষজ্ঞ ডাক্তারের পরামর্শ</li>
+                <li>নির্ভরযোগ্য, নির্ভেজাল ঔষধের সমাহার</li>
+                <li>সবচেয়ে সাশ্রয়ী মূল্য</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"কিশোরগঞ্জ ফার্মেসির দ্রুত ডেলিভারি এবং ঔষধের মানের জন্য তারাই আমার একমাত্র ভরসা"</blockquote>
+                    <cite>- সুজন হাসান, ঢাকা</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"কিশোরগঞ্জ ফার্মেসিতে এমন কোন ঔষধ নেই যা পাওয়া যায় না "</blockquote>
+                    <cite>- আশরাফ আলি</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"সবচেয়ে ভরসাযোগ্য ফার্মেসি"</blockquote>
+                    <cite>- সালেহা আক্তার</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14602.716414433617!2d90.3856494!3d23.7944388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b87f1d61f0d45!2sKishoreganj%20Pharmacy!5e0!3m2!1sen!2sbd!4v1620048923139!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html>

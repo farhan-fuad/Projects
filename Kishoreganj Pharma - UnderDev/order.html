@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">কিশোরগঞ্জ <span>ফার্মেসি</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class=""><a href="index.html">হোম</a></li>
+                    <li><a href="#">প্রদত্ত সেবা সমূহ</a></li>
+                    <li><a href="#">আমাদের সম্পর্কে</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">যোগাযোগ করুণ</a></li>
+                    <li class="go-premium-cta"><a href="checkup.html">ডাক্তার দেখান</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="order">
+        
+        <div class="order1">
+            <form action="form.php" method="POST">
+                <p>আপনার নাম</p>
+                <input type="text" name="name" id="name">
+                <p>ঔষধের নাম এবং পরিমাণ বিস্তারিত</p>
+                <textarea name="meds" id="meds" cols="30" rows="10"></textarea>
+                <p>আপনার মোবাইল নম্বর</p>
+                <input type="number" name="pn" id="pn">
+                <p>ডিলিভারির ঠিকানা</p>
+                <textarea name="add" id="add" cols="30" rows="5"></textarea>
+
+                <input type="submit" value="Order">
+            </form>
+        </div>
+            
+        </div>
+        <div class="order2">
+            <p class="p-phn">অথবা মোবাইলের মাধ্যমে অর্ডার দিন</p>
+            <div class="phn1">
+                <p class="phone-1-txt">
+                    যোগাযোগ ১ঃ
+                    <p class="phone-1">01940404099</p>
+                    যোগাযোগ ২ঃ
+                    <p class="phone-1">01940404099</p>
+                </p>
+            </div>
+            <!-- <div class="phn2">
+                <p class="phone-2-txt">
+                    যোগাযোগ ২ঃ
+                    <p class="phone-2">01940404099</p>
+                </p>
+            </div> -->
+        </div>
+    </section>
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+</body>
+</html>

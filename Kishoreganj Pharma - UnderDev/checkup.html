@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">কিশোরগঞ্জ <span>ফার্মেসি</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">হোম</a></li>
+                    <li><a href="#">প্রদত্ত সেবা সমূহ</a></li>
+                    <li><a href="checkup.html">আমাদের সম্পর্কে</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">যোগাযোগ করুণ</a></li>
+                    <li class="go-premium-cta"><a href="order.html">ডাক্তার দেখান</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="writings">
+        <div class="doc-img">
+            <img src="images/VAI.png" alt="" class="vai-img">
+        </div>
+        <div class="doc-writings">
+            <h2>ডা. সারোয়ার জাহান জুয়েল</h2><br>
+            <p>ডা. জুয়েল লেখাপড়া করেছেন ময়মনসিংহ মেডিকেল কলেজ থেকে। বর্তমানে বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালইয়ে (পিজি হসপিটাল) একজন সিনিয়র চিকিৎসক হিসাবে কর্মরত। কিশোরগঞ্জের কৃতী সন্তান ডা. জুয়েল কিশোরগঞ্জ ছাড়াও মাউনা এবং ঢাকায় হত দরিদ্র, অসহায়, বঞ্ছিত মানুষের কল্যানে স্বল্পমূল্যে অথবা বিণামূল্যে চিকিৎসা সেবা দিয়ে থাকেন। সে ভাবনা থেকেই কিশোরগঞ্জ ফার্মেসির অবতারণা। ঢাকায় অবস্থানরত অসংখ্য দরিদ্র, অসহায় মানুষের চিকিৎসা সেবা নেবার জন্য কোন নির্ভরযোগ্য সমাধান নেই, এ বিষয়টিকেই পরিবর্তন করার লক্ষ্য নিয়ে কিশোরগঞ্জ ফার্মেসি প্রতিষ্ঠানটির জন্ম দেন। আল্লাহ্‌'র ইচ্ছা থাকলে এই প্রতিষ্ঠানটিকে অন্য মাত্রায় নিয়ে যাবার ইচ্ছা রয়েছে এই কৃতী সন্তানের।
+                
+            </p>
+        </div>
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+</body>
+</html>
