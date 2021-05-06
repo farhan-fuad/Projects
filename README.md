@@ -1,2 +1,1 @@
-# Basic-HTML-and-CSS-projects
-This repo contains my basic static websites written in HTML and CSS
+#basic_html_css_js_projects
