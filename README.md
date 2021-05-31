@@ -1,1 +1,1 @@
-#basic_html_css_js_projects
+HTML, JAVASCRIPT, CSS, BOOTSTRAP, DJANGO AND NODE PROJECTS
